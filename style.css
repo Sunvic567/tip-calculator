@@ -1,0 +1,221 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    background:  hsl(172, 67%, 45%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} 
+.container{
+    padding: 1rem;
+     width: 100%;
+}
+.container #head{
+    text-align: center;
+    margin: 2rem;
+
+}
+form{
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    display: block;
+}
+
+.bill p {
+    color: hsl(186, 14%, 43%);;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  #bill, #people{
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background:  hsl(185, 41%, 84%);
+    font-size: 1rem;
+    font-weight:600 ;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+    text-align: right;
+    
+}
+
+
+#people{
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 12px; 
+    padding-left: 70px; 
+    font-size: 16px;   
+}
+#bill{
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 12px; 
+    padding-left: 70px; 
+    font-size: 16px; 
+}
+#bill::placeholder{
+    font-family: 'Space Mono', monospace;
+}
+
+
+.bill input:hover, #bill:hover, #people:hover{
+    border: 2px solid hsl(186, 14%, 43%);
+   
+}
+.select-tip{
+    margin-bottom: 2rem;
+}
+.select-tip .container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.select-tip .container p{
+    background-color: hsl(183, 100%, 15%);
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 1rem; 
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.select-tip .container p:hover{
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.tip{
+    width: 100%;
+    display: none;
+    
+}
+
+.custom{
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: 0;
+    outline: 0;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+#people-error{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;
+}
+#err {
+    color: red;
+    display: none;
+}
+.Tip{
+    flex-basis: 50%;
+    background-color:hsl(183, 100%, 15%) ;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+}
+.tip-field{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+#tip-text{
+    flex-basis: 60%;
+    
+}
+#person{
+    font-size: 1rem;
+    color: hsl(184, 14%, 56%);
+}
+.tip-field input::placeholder{
+    color: hsl(172, 67%, 45%);
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 1;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+#input-field{
+    background-color: transparent;
+    font-size: 1.9rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: hsl(172, 67%, 45%);
+    padding: 1rem;
+    flex-basis: 40%;
+    width: 70%;
+    text-align: right;
+}
+#resetBtn{
+    width: 80%;
+    padding: 1rem;
+    background-color:hsl(172, 67%, 45%);
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1024px){
+    
+.container{
+    padding: 1rem;
+     width: 80%;
+}
+.container #head{
+    text-align: center;
+    margin: 2rem;
+
+}
+form{
+    display: flex;
+    width: 70%;
+    margin-left: 12rem;
+}
+.bill{
+    flex-basis: 50%;
+    padding: 1rem;
+}
+ 
+  #bill, #people{
+   font-size: 1.5rem;
+   padding: 0.5rem;
+} 
+.Tip{
+    flex-basis: 50%;
+    background-color:hsl(183, 100%, 15%) ;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 15px;
+    position: relative;
+} 
+} 

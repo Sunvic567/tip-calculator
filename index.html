@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  
+<div class="container">
+  <div id="head"><h1>SPLI</h1>
+    <h1>TTER</h1></div>
+    <form>
+      <div class="bill">
+        <label for="bill">
+          <p>Bill</p>
+        <input type="number" id="bill" >
+      </label>
+      <div class="select-tip">
+        <p>select Tip %</p>
+        <div class="container">
+          <label for="tip5">
+            <p>5%</p>
+            <input type="radio" id="tip5" class="tip">
+          </label>
+          <label for="tip10">
+            <p>10%</p>
+            <input type="radio" id="tip10" class="tip">
+          </label>
+          <label for="tip15">
+            <p>15%</p>
+            <input type="radio" id="tip15" class="tip">
+          </label>
+          <label for="tip25">
+            <p>25%</p>
+            <input type="radio" id="tip25" class="tip">
+          </label>
+          <label for="tip5">
+            <p>50%</p>
+            <input type="radio" id="tip5" class="tip">
+          </label>
+          <input type="number" class="custom" placeholder="Custom">
+        </div>
+      </div>
+      <label for="people">
+        <div id="people-error">
+        <div>  <p>number of people</p></div>
+         <div > <p id="err">Can't be zero</p></div>
+        </div>
+        <input type="number" id="people">
+      </label>
+      </div>
+      <div class="Tip">
+        <label for="tip-amount" class="tip-field">
+          <div id="p">
+           <p>Tip amount</p>
+           <p id="person"> / person</p>
+          </div>
+          <input type="text" id="input-field" placeholder="$0.00"  class="tip-amt"/>
+        </label>
+        <label for="total" class="tip-field">
+            <div id="tip-text">
+             <p>  Total</p>
+             <p id="person"> / person</p>
+            </div>
+            <input type="text" id="input-field" placeholder="$0.00"  class="total-amt"/>
+        </label>
+      <button id="resetBtn">RESET</button>
+      </div>
+    </form>
+ 
+ 
+</div>
+
+<script src="script.js"></script>
+  </div>
+</body>
+</html>
